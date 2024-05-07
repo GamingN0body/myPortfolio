@@ -1,6 +1,7 @@
 /*inherint Page styling*/
 * {
-    margin: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 /* body{
@@ -25,7 +26,9 @@ main {}
 
 footer {}
 
-article {}
+article {
+    margin: 1%;
+}
 
 section {}
 
@@ -64,22 +67,37 @@ button:hover {
     
 } */
 
+img {
+    max-width: 100%;
+}
+
 /*Base styling*/
 .textHeader{
     background-color: #FFFAFA;
     border-radius: 15px;
-    width: 40%;
-    height: 50%;
+    width: fit-content;
     color: #000080;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerTextHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerImage {
+    width: 35%;
 }
 
 .title{
     margin: 2%;
+    font-size: 4em;
 }
 
 .subtitle {
     margin: 2%;
-    font-size: larger;
+    font-size: xx-large;
 }
 
 .row {
@@ -96,8 +114,14 @@ button:hover {
     background-color: #0047AB;
     color: #FFFAFA;
     width: 80%;
-    height: 7.5em;
-    font-size: x-large;
+    font-size: 30px;
+    display: flex;
+}
+
+.aboutPageImage {
+    width: 15%;
+    border:  thick double #26619C; 
+    border-radius: 165px;;
 }
 
 .skillRow {
@@ -111,6 +135,17 @@ button:hover {
 
 .skillRowSect {
     margin: 1%;
+}
+
+#skillRowImageHTML {
+    width: 50%;
+}
+
+.skillRowImage {
+    max-width: 100%;
+    width: 25%;
+    scale: 105%;
+    margin: 0%;
 }
 
 /*Individal styling*/
