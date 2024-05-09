@@ -27,7 +27,22 @@
 
 <body>
     <nav>
-        <section class="column">
+        <section class="navImages" id="navImagesAboutMe">
+            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage"><img
+                    src="/images/Indeed-Symbol.png" alt="image of indeed logo that is linked to my account when clicked"
+                    class="navImage" id="navImageIndeed">
+            </a>
+            <a href="https://github.com/GamingN0body">
+                <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
+                    class="navImage" id="navImageGithub">
+            </a>
+            <a href="https://mail.google.com/mail/u/3/#inbox">
+                <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
+                    class="navImage" id="navImageEmail">
+            </a>
+        </section>
+        <!-- I will add a text that will change and say something, think it will be cool and it will add more js -->
+        <section class="navbarColumn">
             <section class="navBar">
                 <button class="navButtonDD">
                     About Me
@@ -74,21 +89,6 @@
                 </section>
             </section>
         </section>
-        <!-- I will add a text that will change and say something, think it will be cool and it will add more js -->
-        <section class="navImages" id="navImagesAboutMe">
-            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage"><img
-                    src="/images/Indeed-Symbol.png" alt="image of indeed logo that is linked to my account when clicked"
-                    class="navImage" id="navImageIndeed">
-            </a>
-            <a href="https://github.com/GamingN0body">
-                <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
-                    class="navImage" id="navImageGithub">
-            </a>
-            <a href="https://mail.google.com/mail/u/3/#inbox">
-                <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
-                    class="navImage" id="navImageEmail">
-            </a>
-        </section>
     </nav>
     <header>
         <section class="textHeader column" id="textHeaderAboutMe">
@@ -103,9 +103,16 @@
                     class="aboutPageImage" id="aboutPageImageAboutMe">
                 <section class="column">
                     <p class="aboutPageText" id="aboutPageTextAboutMe">
-                        I am currently a junior attending Clovis East High School and Center of Advanced Education and
-                        Technology (CART). This is a website that will provide information about me and my
-                        accomplishments.
+                        A diligent high school student proficient in programming and team leadership, characterized by a
+                        strong work ethic and dependability. Skilled in front-end website development utilizing coding
+                        tools like GitHub. Concurrently engaged as a house sitter, honing transferable skills applicable
+                        to various life scenarios. While as a house sitter I have been able to create friendly
+                        relationships with my clients and gain their trust. I have learned to be able to work under
+                        pressure and with time constraints. I love animals and love working with them. While at school I
+                        have been preparing myself through classes that teach me more about how to program. I have been
+                        able to learn HTML, CSS, and JS. I really feel in place creating websites and designing, I have
+                        always been pretty good with computers, but now I enjoy working with them. I am eager to
+                        contribute dedicated efforts towards achieving excellence in future endeavors.
                     </p>
                     <a class="" href="homePage.html"><button class="aboutPageButton" id="aboutPageButtonAboutMe">
                             Home Page
@@ -113,30 +120,36 @@
                 </section>
             </section>
         </article>
-        <h2 id="skillTitle">Skills</h2>
-        <article id="skillRowAboutMe">
-            <section class="whiteBox" id="whiteBoxProgramming">
-                <p class="" id="">
-                    I have some education in programming. I have created many websites using CSS and HTML, with a little
-                    bit of JS.
-                </p>
+        <h2 class="whiteHeading" id="skillTitle">Skills</h2>
+        <article class="blueArticles" id="skillRowAboutMe">
+            <section class="whiteBoxDuo">
+                <section class="whiteBox " id="whiteBoxProgramming">
+                    <p class="whiteText" id="">
+                        I have some education in programming. I have created many websites using CSS and HTML, with a
+                        little
+                        bit of JS.
+                    </p>
+                </section>
+                <section class="whiteBox" id="whiteBoxDesign">
+                    <p class="whiteText" id="">
+                        I have done some design work for projects while at school as well. I got this from project
+                        experience.
+                    </p>
+                </section>
             </section>
-            <section class="whiteBox" id="whiteBoxDesign">
-                <p class="" id="">
-                    I have done some design work for projects while at school as well. I got this from project
-                    experience.
-                </p>
-            </section>
-            <section class="whiteBox" id="whiteBoxAnimals">
-                <p class="" id="">
-                    I am good with animals, I have not found a dog that hasn’t liked me nor have I found a dog I
-                    dislike.
-                </p>
-            </section>
-            <section class="whiteBox" id="whiteBoxOrganizing">
-                <p class="" id="">
-                    I am good at organizing. I have pages of ideas and plans that are neatly done in google documents.
-                </p>
+            <section class="whiteBoxDuo">
+                <section class="whiteBox" id="whiteBoxAnimals">
+                    <p class="whiteText" id="">
+                        I am good with animals, I have not found a dog that hasn’t liked me nor have I found a dog I
+                        dislike.
+                    </p>
+                </section>
+                <section class="whiteBox" id="whiteBoxOrganizing">
+                    <p class="whiteText" id="">
+                        I am good at organizing. I have pages of ideas and plans that are neatly done in google
+                        documents.
+                    </p>
+                </section>
             </section>
         </article>
     </main>

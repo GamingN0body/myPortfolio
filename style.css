@@ -12,12 +12,15 @@ nav {
     background-color: #26619C;
     color: #FFFAFA;
     display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
 header {
     font-family: "Lato", serif;
     background-color: #000080;
-    height: 25em;
+    height: 35em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,11 +64,11 @@ p {
 }
 
 button {
-    background-color: #E3DAC9;
+    background-color: #FFFAFA;
     color: #000080;
     border-color: #000080;
     border-style: outset;
-    border-width: 4px;
+    border-width: 5px;
     width: fit-content;
 }
 
@@ -73,13 +76,16 @@ button:hover {
     border-style: inset;
 }
 
-/* a{
-} */
-
 img {
     max-width: 50%;
 }
 
+ul {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
 /*Base styling*/
 /* Row and Column */
 .row {
@@ -93,6 +99,13 @@ img {
 }
 
 /* nav */
+.navbarColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
 .navBar {
     position: relative;
     display: inline-block;
@@ -107,18 +120,19 @@ img {
 }
 
 .navBar:hover .navBarContent {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     position: relative;
-    display: inline-block;
 }
 
 .navImage {
     direction: rtl;
-    width: 15%;
+    width: 5%;
 }
 
 .navButtonDD {
-    font-size: xx-large;
+    font-size: large;
 }
 
 /* Header */
@@ -165,6 +179,8 @@ img {
     border: thick double #26619C;
     border-radius: 165px;
     cursor: pointer;
+    width: 20vw;
+    height: 30vh;
 }
 
 /* Skill Row */
@@ -198,14 +214,15 @@ img {
     background-color: #0047AB;
 }
 
-.whiteSect {
+.whiteSect,
+.whiteBox {
     background-color: #FFFAFA;
-    color: #000080;
-    padding: 1%;
-    margin-bottom: 2%;
+    color: #0047AB;
+}
+
+.skillRowAboutMe {
+    width: 45%;
     display: flex;
-    flex-direction: column;
-    width: 30%;
 }
 
 /* White Article */
@@ -215,18 +232,54 @@ img {
 }
 
 .blueHeading {
-    color: #000080;
+    color: #0047AB;
     background-color: #FFFAFA;
 }
 
 .blueSect {
-    background-color: #000080;
+    background-color: #0047AB;
     color: #FFFAFA;
 }
 
+/* No Image */
+.noImage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1%;
+}
+/* Weird Imaging */
+
 /*Individal styling*/
+/* About Me */
+.whiteBoxDuo {
+    display: flex;
+}
+
+.whiteBox {
+    display: flex;
+    margin: 1%;
+}
+
+#whiteBoxProgramming,
+#whiteBoxDesign,
+#whiteBoxAnimals,
+#whiteBoxOrganizing {
+    width: 100%;
+    border-width: 5px;
+    border-style: ridge;
+}
+
 /* Home Page */
 /* Website Finder */
+#whiteSectHome {
+    padding: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
 .websiteImg {
     max-width: min-content;
 }
@@ -240,7 +293,6 @@ img {
 #petInfoSect {
     width: 75%;
     display: flex;
-    
 }
 
 .animalGallery {
@@ -252,6 +304,20 @@ img {
     width: 60%;
 }
 
+/* Contacts */
+#galleryContact {
+    display: flex;
+    text-align: center;
+    margin: 1%;
+    margin-bottom: 2%;
+}
+/* CC Website */
+.three {
+    width: 33%;
+    margin: 1%;
+    border-width: 7px;
+    border-style: ridge;
+}
 /*Base styling*/
 
 
