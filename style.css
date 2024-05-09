@@ -11,6 +11,7 @@
 nav {
     background-color: #26619C;
     color: #FFFAFA;
+    display: flex;
 }
 
 header {
@@ -24,11 +25,13 @@ header {
 
 main {}
 
-footer {}
-
-article {
-    margin: 1%;
+footer {
+    background-color: #26619C;
+    color: #FFFAFA;
+    display: flex;
 }
+
+article {}
 
 section {}
 
@@ -36,11 +39,17 @@ h1 {
     font-size: xx-large;
 }
 
-h2 {}
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
 
 h3 {}
 
-h4 {}
+h4 {
+    font-size: 25px;
+    text-align: center;
+}
 
 h5 {}
 
@@ -48,6 +57,7 @@ h6 {}
 
 p {
     font-family: "Arvo", serif;
+    font-size: 25px;
 }
 
 button {
@@ -64,15 +74,55 @@ button:hover {
 }
 
 /* a{
-    
 } */
 
 img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 /*Base styling*/
-.textHeader{
+/* Row and Column */
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav */
+.navBar {
+    position: relative;
+    display: inline-block;
+}
+
+.navBarContent {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+}
+
+.navBar:hover .navBarContent {
+    display: block;
+    position: relative;
+    display: inline-block;
+}
+
+.navImage {
+    direction: rtl;
+    width: 15%;
+}
+
+.navButtonDD {
+    font-size: xx-large;
+}
+
+/* Header */
+.textHeader {
     background-color: #FFFAFA;
     border-radius: 15px;
     width: fit-content;
@@ -87,10 +137,12 @@ img {
 }
 
 .headerImage {
-    width: 35%;
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
 }
 
-.title{
+.title {
     margin: 2%;
     font-size: 4em;
 }
@@ -100,55 +152,105 @@ img {
     font-size: xx-large;
 }
 
-.row {
-    display: flex;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
+/* About Page */
 .aboutPageText {
     padding: 1%;
     background-color: #0047AB;
     color: #FFFAFA;
     width: 80%;
-    font-size: 30px;
     display: flex;
 }
 
 .aboutPageImage {
-    width: 15%;
-    border:  thick double #26619C; 
-    border-radius: 165px;;
+    border: thick double #26619C;
+    border-radius: 165px;
+    cursor: pointer;
 }
 
+/* Skill Row */
 .skillRow {
     background-color: #26619C;
-}
-
-.skillsHeading {
     color: #FFFAFA;
-    text-align: center;
 }
 
 .skillRowSect {
-    margin: 1%;
-}
-
-#skillRowImageHTML {
-    width: 50%;
+    text-align: center;
 }
 
 .skillRowImage {
     max-width: 100%;
-    width: 25%;
-    scale: 105%;
-    margin: 0%;
+    width: 60%;
+}
+
+.skillRowText {
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Blue Article */
+.blueArticles {
+    background-color: #0047AB;
+    height: max-content;
+}
+
+.whiteHeading {
+    color: #FFFAFA;
+    background-color: #0047AB;
+}
+
+.whiteSect {
+    background-color: #FFFAFA;
+    color: #000080;
+    padding: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/* White Article */
+.whiteArticles {
+    background-color: #E3DAC9;
+    height: max-content;
+}
+
+.blueHeading {
+    color: #000080;
+    background-color: #FFFAFA;
+}
+
+.blueSect {
+    background-color: #000080;
+    color: #FFFAFA;
 }
 
 /*Individal styling*/
+/* Home Page */
+/* Website Finder */
+.websiteImg {
+    max-width: min-content;
+}
+
+.websiteName {
+    text-align: center;
+    font-size: x-large;
+}
+
+/* Pet Part */
+#petInfoSect {
+    width: 75%;
+    display: flex;
+    
+}
+
+.animalGallery {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.animalImage {
+    max-width: 100%;
+    width: 60%;
+}
 
 /*Base styling*/
 

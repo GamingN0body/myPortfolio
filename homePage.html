@@ -27,40 +27,67 @@
 
 <body>
     <nav>
-        <section class="navBar" id="navBarHome">
-            <a href="aboutMe.html"><button class="" id="">
+        <section class="column">
+            <section class="navBar">
+                <button class="navButtonDD">
                     About Me
-                </button></a>
-            <a href="homePage.html"><button class="" id="">
-                    Home Page
-                </button></a>
-            <a href="resume.html"><button class="" id="">
-                    Resume
-                </button></a>
-            <a href="cretaceousCafe.html"><button class="" id="">
-                    Cretaceous Cafe
-                </button></a>
-            <a href="revengeKnight.html"><button class="" id="">
-                    Revenge Knight
-                </button></a>
-            <a href="troodonWiki.html"><button class="" id="">
-                    Troodon Wiki
-                </button></a>
-            <a href="dogSitter.html"><button class="" id="">
-                    Pet Sitting
-                </button></a>
-            <a href="contacts.html"><button class="" id="">
-                    Contacts
-                </button></a>
+                </button>
+                <section class="navBarContent" id="navBarHome">
+                    <a href="aboutMe.html"><button class="navButtons" id="">
+                            About Me
+                        </button></a>
+                    <a href="homePage.html"><button class="navButtons" id="">
+                            Home Page
+                        </button></a>
+                    <a href="resume.html"><button class="navButtons" id="">
+                            Resume
+                        </button></a>
+                    <a href="contacts.html"><button class="navButtons" id="">
+                            Contacts
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Websites
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="cretaceousCafe.html"><button class="navButtons" id="">
+                            Cretaceous Cafe
+                        </button></a>
+                    <a href="revengeKnight.html"><button class="navButtons" id="">
+                            Revenge Knight
+                        </button></a>
+                    <a href="troodonWiki.html"><button class="navButtons" id="">
+                            Troodon Wiki
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Occupation
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="dogSitter.html"><button class="navButtons" id="">
+                            Pet Sitting
+                        </button></a>
+                </section>
+            </section>
         </section>
         <!-- I will add a text that will change and say something, think it will be cool and it will add more js -->
         <section class="navImages" id="navImagesAboutMe">
-            <img src="/images/indeed.png" alt="image of indeed logo that is linked to my account when clicked"
-                class="navImage" id="navImageIndeed">
-            <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
-                class="navImage" id="navImageGithub">
-            <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
-                class="navImage" id="navImageEmail">
+            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage"><img
+                    src="/images/Indeed-Symbol.png" alt="image of indeed logo that is linked to my account when clicked"
+                    class="navImage" id="navImageIndeed">
+            </a>
+            <a href="https://github.com/GamingN0body">
+                <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
+                    class="navImage" id="navImageGithub">
+            </a>
+            <a href="https://mail.google.com/mail/u/3/#inbox">
+                <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
+                    class="navImage" id="navImageEmail">
+            </a>
         </section>
     </nav>
     <header>
@@ -79,7 +106,7 @@
         <article class="aboutPage" id="">
             <section class="aboutPageBody" id="">
                 <section class="row">
-                    <img class="aboutPageImage" src="/images/loghan.jpg" alt="image of me" id="aboutPageImage">
+                    <img src="/images/loghan.jpg" alt="image of me" class="aboutPageImage" id="">
                     <section class="column">
                         <p class="aboutPageText" id="">
                             I am currently a junior attending Clovis East High School and Center of Advanced Education
@@ -94,9 +121,9 @@
                             teamwork to other areas. Seeking opportunities to continue delivering exceptional websites
                             and learning more about how to improve my skills.
                         </p>
-                        <button class="aboutPageButton" id="">
+                        <a class="" href="resume.html"><button class="aboutPageButton" id="">
                             Resume
-                        </button>
+                        </button></a>
                     </section>
                 </section>
             </section>
@@ -130,10 +157,11 @@
                 </section>
             </section>
         </article>
-        <article class="blueArticles" id="">
-            <h2 class="whiteHeading" id="">My Websites</h2>
+        <h2 class="whiteHeading" id="">My Websites</h2>
+        <article class="blueArticles row" id="">
             <section class="whiteSect" id="">
-                <img src="" alt="icon image of the website" class="websiteImg" id="">
+                <img src="images/logoWebsite.png" alt="icon image of the website" class="websiteImg" id="websiteImgJPC">
+                <h3 class="websiteName">Cretaceous Cafe</h3>
                 <p class="whiteText" id="">
                     A website that uses a majority of HTML and CSS with some support by JS.
                     The website was a product of a school project based on Jurassic Park.
@@ -142,11 +170,14 @@
                     We spent a total of 3 months on the project.
                     I worked with Gavin Stetson.
                 </p>
-                <button class="" id="">
-                    JP Cafe
-                </button>
+                <a class="thing" href="cretaceousCafe.html"><button class="websiteButtons" id="">
+                        JP Cafe
+                    </button></a>
             </section>
             <section class="whiteSect" id="">
+                <img src="/images/textAdventureLogo.webp" alt="image of the logo for the text adventure"
+                    class="websiteImg" id="websiteImgTA">
+                <h3 class="websiteName">Revenge Knight</h3>
                 <p class="whiteText" id="">
                     A text adventure using a majority of JS with support of HTML and CSS.
                     This text adventure was assigned as a group project based off of the “Hero’s Journey”.
@@ -155,27 +186,27 @@
                     We spent 2 months working on this project.
                     I partnered with Angel Delgado Jimenez.
                 </p>
-                <button class="" id="">
-                    Revenge Knight
-                </button>
-                <img src="" alt="image of the logo for the text adventure" class="blueArticles" id="">
+                <a class="thing" href="revengeKnight.html"><button class="websiteButtons" id="">
+                        Revenge Knight
+                    </button></a>
             </section>
             <section class="whiteSect" id="">
-                <img src="" alt="image of the logo for the Wiki page" class="blueArticles" id="">
+                <img src="/images/wiki.png" alt="image of the logo for the Wiki page" class="websiteImg"
+                    id="websiteImgWiki">
+                <h3 class="websiteName">Troodon Wiki</h3>
                 <p class="whiteText" id="">
                     This is a website that informs you about a dinosaur of our choosing.
                     This was also a project for school and was made like a Wikipedia page.
                     I choose the dinosaur of Troodon.
                 </p>
-                <button class="" id="">
-                    Troodon Wiki
-                </button>
+                <a class="thing" href="troodonWiki.html"><button class="websiteButtons" id="">
+                        Troodon Wiki
+                    </button> </a>
             </section>
         </article>
         <article class="whiteArticle" id="">
             <h2 class="blueHeading" id="">Pet Sitting Info</h2>
-            <section class="blueSect" id="petInfoSect">
-                <img src="/images/dogs.jpeg" alt="image of a ai dog with mountains in the background" class="" id="">
+            <section class="blueSect " id="petInfoSect">
                 <p class="blueText" id="">
                     For the past 4 years I have been working as a pet sitter.
                     It was first just something that my family paid me to do, but it would be a way of making money from
@@ -184,49 +215,80 @@
                     and Yorkshire Terriers.
                     As much as I work with dogs I can also work with cats.
                     To learn more click here
+                    <a class="" href=""><button class="" id="">
+                            Pet Sitting
+                        </button></a>
                 </p>
-                <button class="" id="">
-                    Pet Sitting
-                </button>
             </section>
-            <section class="gallery" id="galleryAnimals">
-                <img src="/images/dogs.jpeg" alt="image of two dogs looking at the camera" class="animalImage" id="">
-                <p>Spike & Appa</p>
-                <img src="/images/" alt="image of a dog in a crate" class="animalImage" id="">
-                <p>Winry</p>
-                <img src="/images/oldDog.jpg" alt="image of a old dog on a bed" class="animalImage" id="">
-                <p>Kitty</p>
-                <img src="/images/cat.jpg" alt="" class="" id="">
-                <p>Cloud</p>
+            <section class="gallery row" id="galleryAnimals">
+                <section class="animalGallery column">
+                    <img src="/images/dogs.jpeg" alt="image of two dogs looking at the camera" class="animalImage"
+                        id="imgTwoDogs">
+                    <p>Spike & Appa</p>
+                </section>
+                <section class="animalGallery column">
+                    <img src="/images/smallDog.jpg" alt="image of a dog in a crate" class="animalImage"
+                        id="imgSmallDog">
+                    <p>Winry</p>
+                </section>
+                <section class="animalGallery column">
+                    <img src="/images/oldDog.jpg" alt="image of a old dog on a bed" class="animalImage" id="imgOldDog">
+                    <p>Kitty</p>
+                </section>
+                <section class="animalGallery column">
+                    <img src="/images/cat.jpg" alt="" class="animalImage" id="imgCat">
+                    <p>Cloud</p>
+                </section>
             </section>
         </article>
     </main>
     <footer>
-        <section class="footerBar" id="footerBarAboutMe">
-            <a href="aboutMe.html"><button class="" id="">
+        <section class="column">
+            <section class="navBar">
+                <button class="navButtonDD">
                     About Me
-                </button></a>
-            <a href="homePage.html"><button class="" id="">
-                    Home Page
-                </button></a>
-            <a href="resume.html"><button class="" id="">
-                    Resume
-                </button></a>
-            <a href="cretaceousCafe.html"><button class="" id="">
-                    Cretaceous Cafe
-                </button></a>
-            <a href="revengeKnight.html"><button class="" id="">
-                    Revenge Knight
-                </button></a>
-            <a href="troodonWiki.html"><button class="" id="">
-                    Troodon Wiki
-                </button></a>
-            <a href="dogSitter.html"><button class="" id="">
-                    Pet Sitting
-                </button></a>
-            <a href="contacts.html"><button class="" id="">
-                    Contacts
-                </button></a>
+                </button>
+                <section class="navBarContent" id="navBarHome">
+                    <a href="aboutMe.html"><button class="navButtons" id="">
+                            About Me
+                        </button></a>
+                    <a href="homePage.html"><button class="navButtons" id="">
+                            Home Page
+                        </button></a>
+                    <a href="resume.html"><button class="navButtons" id="">
+                            Resume
+                        </button></a>
+                    <a href="contacts.html"><button class="navButtons" id="">
+                            Contacts
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Websites
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="cretaceousCafe.html"><button class="navButtons" id="">
+                            Cretaceous Cafe
+                        </button></a>
+                    <a href="revengeKnight.html"><button class="navButtons" id="">
+                            Revenge Knight
+                        </button></a>
+                    <a href="troodonWiki.html"><button class="navButtons" id="">
+                            Troodon Wiki
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Occupation
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="dogSitter.html"><button class="navButtons" id="">
+                            Pet Sitting
+                        </button></a>
+                </section>
+            </section>
         </section>
         <section class="footerText" id="footerTextAboutMe">
             <h4 class="" id="">
@@ -236,12 +298,18 @@
             </h4>
         </section>
         <section class="navImages" id="navImagesAboutMe">
-            <img src="/images/indeed.png" alt="image of indeed logo that is linked to my account when clicked"
-                class="navImage" id="navImageIndeed">
-            <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
-                class="navImage" id="navImageGithub">
-            <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
-                class="navImage" id="navImageEmail">
+            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage"><img
+                    src="/images/Indeed-Symbol.png" alt="image of indeed logo that is linked to my account when clicked"
+                    class="navImage" id="navImageIndeed">
+            </a>
+            <a href="https://github.com/GamingN0body">
+                <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
+                    class="navImage" id="navImageGithub">
+            </a>
+            <a href="https://mail.google.com/mail/u/3/#inbox">
+                <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
+                    class="navImage" id="navImageEmail">
+            </a>
         </section>
     </footer>
 </body>
