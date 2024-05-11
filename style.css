@@ -26,17 +26,11 @@ header {
     align-items: center;
 }
 
-main {}
-
 footer {
     background-color: #26619C;
     color: #FFFAFA;
     display: flex;
 }
-
-article {}
-
-section {}
 
 h1 {
     font-size: xx-large;
@@ -47,18 +41,12 @@ h2 {
     font-size: 40px;
 }
 
-h3 {}
-
 h4 {
     font-size: 25px;
     text-align: center;
 }
 
-h5 {}
-
-h6 {}
-
-p {
+p, li {
     font-family: "Arvo", serif;
     font-size: 25px;
 }
@@ -86,6 +74,7 @@ ul {
     margin-right: 0;
     padding-left: 40px;
 }
+
 /*Base styling*/
 /* Row and Column */
 .row {
@@ -166,12 +155,18 @@ ul {
     font-size: xx-large;
 }
 
+.center,
+.footerAlign {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
 /* About Page */
 .aboutPageText {
     padding: 1%;
     background-color: #0047AB;
     color: #FFFAFA;
-    width: 80%;
     display: flex;
 }
 
@@ -241,6 +236,10 @@ ul {
     color: #FFFAFA;
 }
 
+.websiteImg {
+    max-width: min-content;
+}
+
 /* No Image */
 .noImage {
     display: flex;
@@ -248,6 +247,14 @@ ul {
     text-align: center;
     margin: 1%;
 }
+
+/* One Section */
+.oneSect {
+    justify-content: center;
+    text-align: center;
+    margin: 1%;
+}
+
 /* Weird Imaging */
 
 /*Individal styling*/
@@ -272,7 +279,7 @@ ul {
 
 /* Home Page */
 /* Website Finder */
-#whiteSectHome {
+.whiteSectThree {
     padding: 1%;
     margin-bottom: 2%;
     display: flex;
@@ -311,6 +318,7 @@ ul {
     margin: 1%;
     margin-bottom: 2%;
 }
+
 /* CC Website */
 .three {
     width: 33%;
@@ -318,7 +326,73 @@ ul {
     border-width: 7px;
     border-style: ridge;
 }
-/*Base styling*/
 
+/* Text Adventure */
+#headerImageTA {
+    border-radius: 165px;
+}
 
-/*Base styling*/
+.imageTextAdvent {
+    width: 50%;
+    text-align: center;
+}
+
+#galleryTextAdvent {
+    display: flex;
+}
+
+/* Troodon Wiki */
+.galleryWiki {
+    padding: 1%;
+    margin: 2%;
+    width: 45%;
+}
+
+/* Dog Sitting */
+#whiteSectMyCosts {
+    width: 50%;
+}
+
+/* Resume */
+.left {
+    width: 50%;
+}
+
+.resumeImage {
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+}
+
+hr {
+    color: #FFFAFA;
+}
+
+#imageResume {
+    scale: 390%;
+    translate: 40px 100px;
+}
+
+#resumeArticles {
+    color: #FFFAFA;
+}
+
+.ResumeTitle {
+    text-align: left;
+}
+
+#resumeArticlesWhite {
+    color: #000080;
+}
+
+.resumeHeader {
+    font-size: xx-large;
+}
+
+.resumeSubheader {
+    text-align: left;
+}
+
+.resumeRow {
+    display: flex;
+}

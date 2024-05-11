@@ -5,90 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- links to fonts -->
+    <!-- Arvo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Josefin Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <section class="navBar" id="navBarHome">
-            <a href="aboutMe.html"><button class="" id="">
-                    About Me
-                </button></a>
-            <a href="homePage.html"><button class="" id="">
-                    Home Page
-                </button></a>
-            <a href="resume.html"><button class="" id="">
-                    Resume
-                </button></a>
-            <a href="cretaceousCafe.html"><button class="" id="">
-                    Cretaceous Cafe
-                </button></a>
-            <a href="revengeKnight.html"><button class="" id="">
-                    Revenge Knight
-                </button></a>
-            <a href="troodonWiki.html"><button class="" id="">
-                    Troodon Wiki
-                </button></a>
-            <a href="dogSitter.html"><button class="" id="">
-                    Pet Sitting
-                </button></a>
-            <a href="contacts.html"><button class="" id="">
-                    Contacts
-                </button></a>
-        </section>
         <section class="navImages" id="navImagesAboutMe">
-            <img src="/images/indeed.png" alt="image of indeed logo that is linked to my account when clicked" class="navImage" id="navImageIndeed">
-            <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked" class="navImage" id="navImageGithub">
-            <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked" class="navImage" id="navImageEmail">
+            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage"><img
+                    src="/images/Indeed-Symbol.png" alt="image of indeed logo that is linked to my account when clicked"
+                    class="navImage" id="navImageIndeed">
+            </a>
+            <a href="https://github.com/GamingN0body">
+                <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
+                    class="navImage" id="navImageGithub">
+            </a>
+            <a href="https://mail.google.com/mail/u/3/#inbox">
+                <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
+                    class="navImage" id="navImageEmail">
+            </a>
+        </section>
+        <!-- I will add a text that will change and say something, think it will be cool and it will add more js -->
+        <section class="navbarColumn">
+            <section class="navBar">
+                <button class="navButtonDD">
+                    About Me
+                </button>
+                <section class="navBarContent" id="navBarHome">
+                    <a href="aboutMe.html"><button class="navButtons" id="">
+                            About Me
+                        </button></a>
+                    <a href="homePage.html"><button class="navButtons" id="">
+                            Home Page
+                        </button></a>
+                    <a href="resume.html"><button class="navButtons" id="">
+                            Resume
+                        </button></a>
+                    <a href="contacts.html"><button class="navButtons" id="">
+                            Contacts
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Websites
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="cretaceousCafe.html"><button class="navButtons" id="">
+                            Cretaceous Cafe
+                        </button></a>
+                    <a href="revengeKnight.html"><button class="navButtons" id="">
+                            Revenge Knight
+                        </button></a>
+                    <a href="troodonWiki.html"><button class="navButtons" id="">
+                            Troodon Wiki
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Occupation
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="dogSitter.html"><button class="navButtons" id="">
+                            Pet Sitting
+                        </button></a>
+                </section>
+            </section>
         </section>
     </nav>
     <header>
         <section class="textHeader" id="">
-            <h1 class="title" id="">Welcome To <br> Troodon Wiki</h1>
-            <h3 class="subtitle" id="">By Loghan Hornor</h3>
-            <img src="/images/textAdventureLogo.webp" alt="" class="headerImage" id="">
+            <section class="column">
+                <h1 class="title" id="">Welcome To <br> Troodon Wiki</h1>
+                <h3 class="subtitle" id="">By Loghan Hornor</h3>
+            </section>
+            <img src="/images/wiki.png" alt="" class="headerImage" id="">
         </section>
     </header>
     <main>
         <article class="aboutPage" id="">
-            <section class="aboutPageBody" id="">
-                <img src="/images/textAdventureLogo.webp" alt="image of the logo of the Wiki" class="aboutPageImage" id="">
-                <p class="aboutPageText" id="">
+            <section class="aboutPageBody oneSect" id="">
+                <p class="aboutPageText" id="aboutPageTextTW">
                     This was my first website using HTML and CSS. This is a school project about learning about
-                    dinosaurs of our choice, I choose to write about the Troodon. I did all the design for the website
+                    dinosaurs of our choice, I choose to write about the Troodon. I did all the design for the
+                    website
                     and coding.
                 </p>
             </section>
         </article>
         <article class="skillRow" id="">
             <h2 class="skillRow" id="">Skills Used</h2>
-            <section class="skillRowSect" id="">
-                <img src="/images/html.png" alt="" class="skillRowImage" id="">
-                <p class="skillRowText" id="">
-                    HTML
-                </p>
-            </section>
-            <section class="skillRowSect" id="">
-                <img src="/images/CSS.png" alt="" class="skillRowImage" id="">
-                <p class="skillRowText" id="">
-                    CSS
-                </p>
-            </section>
-            <section class="skillRowSect" id="">
-                <img src="/images/guyOnComputer.png" alt="" class="skillRowImage" id="">
-                <p class="skillRowText" id="">
-                    Learning
-                </p>
-            </section>
-            <section class="skillRowSect" id="">
-                <img src="/images/design.png" alt="" class="skillRowImage" id="">
-                <p class="skillRowText" id="">
-                    Design
-                </p>
+            <section class="row">
+                <section class="skillRowSect" id="">
+                    <img src="/images/html.png" alt="" class="skillRowImage" id="">
+                    <p class="skillRowText" id="">
+                        HTML
+                    </p>
+                </section>
+                <section class="skillRowSect" id="">
+                    <img src="/images/CSS.png" alt="" class="skillRowImage" id="">
+                    <p class="skillRowText" id="">
+                        CSS
+                    </p>
+                </section>
+                <section class="skillRowSect" id="">
+                    <img src="/images/guyOnComputer.png" alt="" class="skillRowImage" id="">
+                    <p class="skillRowText" id="">
+                        Learning
+                    </p>
+                </section>
+                <section class="skillRowSect" id="">
+                    <img src="/images/design.png" alt="" class="skillRowImage" id="">
+                    <p class="skillRowText" id="">
+                        Design
+                    </p>
+                </section>
             </section>
         </article>
         <article class="whiteArticle" id="">
             <section class="row" id="rowWiki">
-                <section class="blueSect" id="">
+                <section class="blueSect three" id="">
                     <p class="blueText" id="">What I Used:</p>
                     <ul class="blueText" id="">
                         <li>Github</li>
@@ -105,7 +158,7 @@
                         </ul>
                     </ul>
                 </section>
-                <section class="blueSect" id="">
+                <section class="blueSect three" id="">
                     <p class="blueText" id="">What I have Learnt:</p>
                     <ul class="blueText">
                         <li>Organization</li>
@@ -115,73 +168,61 @@
                         <li>Research</li>
                     </ul>
                 </section>
-            </section>
-            <section class="blueSect" id="">
-                <p class="blueText" id="">Issues:</p>
-                <ul>
-                    <li>Creating the Links</li>
+                <section class="blueSect three" id="">
+                    <p class="blueText" id="">Issues:</p>
                     <ul>
-                        <li>
-                            This change was required and was a last minute change, I completed it on time but it was
-                            stressful.
-                        </li>
+                        <li>Creating the Links</li>
+                        <ul>
+                            <li>
+                                This change was required and was a last minute change, I completed it on time but it was
+                                stressful.
+                            </li>
+                        </ul>
+                        </li>Styling the Images</li>
+                        <ul>
+                            <li>
+                                I had trouble being able to organize the images and text so they all lined up, I ended
+                                up
+                                just changing ideas.
+                            </li>
+                        </ul>
                     </ul>
-                    </li>Styling the Images</li>
-                    <ul>
-                        <li>
-                            I had trouble being able to organize the images and text so they all lined up, I ended up
-                            just changing ideas.
-                        </li>
-                    </ul>
-                </ul>
+                </section>
             </section>
         </article>
-        <article>
-            <section class="gallery" id="galleryWiki">
-                <img src="/images/mapWiki.png" alt="" class="imageWiki" id="">
-                <img src="/images/textFromWiki.png" alt="" class="imageWiki" id="">
-                <img src="/images/textAdventure.png" alt="" class="imageWiki" id="">
+        <article class="whiteArticles row" id="wikiDouble">
+            <section class="blueSect galleryWiki ">
+                <section class="column">
+                    <img src="/images/mapWiki.png" alt="image of a map where Troodon lives" class="imageWiki" id="">
+                    <p class="blueText">
+                        The image above is from my website about the Troodon habitat. Even though we do not know much
+                        about the Troodon we know do know where the Troodon lived. This section I explain where it lives
+                        and how it was effected by its Habit, with some more context of how scientist figured it all
+                        out. </p>
+                </section>
+            </section>
+            <section class="blueSect galleryWiki">
+                <section class="column">
+                    <img src="/images/textFromWiki.png" alt="image of Troodon eggs" class="imageWiki"
+                        id="imageWikiEggs">
+                    <p class="blueText">
+                        This image is the eggs of the Troodon, in the website I go in detail of what sceintist's think
+                        the Troodon used to live and how they mated. I also went into how how the Troodon would live and
+                        how they would parent.
+                    </p>
+                </section>
             </section>
         </article>
     </main>
     <footer>
-        <section class="footerBar" id="footerBarAboutMe">
-            <a href="aboutMe.html"><button class="" id="">
-                    About Me
-                </button></a>
-            <a href="homePage.html"><button class="" id="">
-                    Home Page
-                </button></a>
-            <a href="resume.html"><button class="" id="">
-                    Resume
-                </button></a>
-            <a href="cretaceousCafe.html"><button class="" id="">
-                    Cretaceous Cafe
-                </button></a>
-            <a href="revengeKnight.html"><button class="" id="">
-                    Revenge Knight
-                </button></a>
-            <a href="troodonWiki.html"><button class="" id="">
-                    Troodon Wiki
-                </button></a>
-            <a href="dogSitter.html"><button class="" id="">
-                    Pet Sitting
-                </button></a>
-            <a href="contacts.html"><button class="" id="">
-                    Contacts
-                </button></a>
-        </section>
-        <section class="footerText" id="footerTextAboutMe">
-            <h4 class="" id="">
-                I am Loghan Hornor, a 17 year old junior at CEHS and CART. I am also a Website Designer
-                and Programmer as well as a
-                self employed as a Pet Sitter.
-            </h4>
-        </section>
-        <section class="navImages" id="navImagesAboutMe">
-            <img src="/images/indeed.png" alt="image of indeed logo that is linked to my account when clicked" class="navImage" id="navImageIndeed">
-            <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked" class="navImage" id="navImageGithub">
-            <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked" class="navImage" id="navImageEmail">
+        <section class="center">
+            <section class="footerText" id="footerTextAboutMe">
+                <h4 class="" id="">
+                    I am Loghan Hornor, a 17 year old junior at CEHS and CART. I am also a Website Designer
+                    and Programmer as well as a
+                    self employed as a Pet Sitter.
+                </h4>
+            </section>
         </section>
     </footer>
 </body>

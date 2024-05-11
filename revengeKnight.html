@@ -5,91 +5,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- links to fonts -->
+    <!-- Arvo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Josefin Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <section class="navBar" id="navBarHome">
-            <a href="aboutMe.html"><button class="" id="">
-                    About Me
-                </button></a>
-            <a href="homePage.html"><button class="" id="">
-                    Home Page
-                </button></a>
-            <a href="resume.html"><button class="" id="">
-                    Resume
-                </button></a>
-            <a href="cretaceousCafe.html"><button class="" id="">
-                    Cretaceous Cafe
-                </button></a>
-            <a href="revengeKnight.html"><button class="" id="">
-                    Revenge Knight
-                </button></a>
-            <a href="troodonWiki.html"><button class="" id="">
-                    Troodon Wiki
-                </button></a>
-            <a href="dogSitter.html"><button class="" id="">
-                    Pet Sitting
-                </button></a>
-            <a href="contacts.html"><button class="" id="">
-                    Contacts
-                </button></a>
-        </section>
         <section class="navImages" id="navImagesAboutMe">
-            <img src="/images/indeed.png" alt="image of indeed logo that is linked to my account when clicked" class="navImage" id="navImageIndeed">
-            <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked" class="navImage" id="navImageGithub">
-            <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked" class="navImage" id="navImageEmail">
+            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage"><img
+                    src="/images/Indeed-Symbol.png" alt="image of indeed logo that is linked to my account when clicked"
+                    class="navImage" id="navImageIndeed">
+            </a>
+            <a href="https://github.com/GamingN0body">
+                <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
+                    class="navImage" id="navImageGithub">
+            </a>
+            <a href="https://mail.google.com/mail/u/3/#inbox">
+                <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
+                    class="navImage" id="navImageEmail">
+            </a>
+        </section>
+        <!-- I will add a text that will change and say something, think it will be cool and it will add more js -->
+        <section class="navbarColumn">
+            <section class="navBar">
+                <button class="navButtonDD">
+                    About Me
+                </button>
+                <section class="navBarContent" id="navBarHome">
+                    <a href="aboutMe.html"><button class="navButtons" id="">
+                            About Me
+                        </button></a>
+                    <a href="homePage.html"><button class="navButtons" id="">
+                            Home Page
+                        </button></a>
+                    <a href="resume.html"><button class="navButtons" id="">
+                            Resume
+                        </button></a>
+                    <a href="contacts.html"><button class="navButtons" id="">
+                            Contacts
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Websites
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="cretaceousCafe.html"><button class="navButtons" id="">
+                            Cretaceous Cafe
+                        </button></a>
+                    <a href="revengeKnight.html"><button class="navButtons" id="">
+                            Revenge Knight
+                        </button></a>
+                    <a href="troodonWiki.html"><button class="navButtons" id="">
+                            Troodon Wiki
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Occupation
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="dogSitter.html"><button class="navButtons" id="">
+                            Pet Sitting
+                        </button></a>
+                </section>
+            </section>
         </section>
     </nav>
     <header>
         <section class="textHeader" id="textHeaderTextAdvent">
-            <h1 class="title" id="titleTextAdvent">Welcome To <br> Vengeful Knight</h1>
-            <h3 class="subtitle" id="subtitleTextAdvent">By Loghan Hornor and Angel Jimenez</h3>
-            <img src="/images/textAdventureLogo.webp" alt="" class="headerImage" id="">
+            <section class="column">
+                <h1 class="title" id="titleTextAdvent">Welcome To <br> Vengeful Knight</h1>
+                <h3 class="subtitle" id="subtitleTextAdvent">By Loghan Hornor and Angel Jimenez</h3>
+            </section>
+            <img src="/images/textAdventureLogo.webp" alt="" class="headerImage" id="headerImageTA">
         </section>
     </header>
     <main>
         <article class="aboutPage" id="">
-            <section class="aboutPageBody" id="">
-                <img src="/images/textAdventureLogo.webp" alt="image of a logo for the text adventure" class="aboutPageImage" id="">
-                <p class="aboutPageText" id="">
-                    This is my first game I’ve made. I worked with a partner on it since it was a school project. I
-                    worked on the story and dialogue while he worked on the combat. I also did most of the designing
-                    parts of the website. The text adventure is about how a farmer’s life was derailed and how he goes
-                    after the man who destroyed  his past life.  
-                </p>
+            <section class="aboutPageBody center" id="">
+                <section class="row">
+                    <img src="/images/textAdventureLogo.webp" alt="image of a logo for the text adventure"
+                        class="aboutPageImage" id="">
+                    <p class="aboutPageText" id="">
+                        This is my first game I’ve made. I worked with a partner on it since it was a school project. I
+                        worked on the story and dialogue while he worked on the combat. I also did most of the designing
+                        parts of the website. The text adventure is about how a farmer’s life was derailed and how he
+                        goes
+                        after the man who destroyed  his past life.  
+                    </p>
+                </section>
             </section>
         </article>
         <article class="skillRow" id="">
             <h2 class="skillsHeading" id="">Skills Used</h2>
-            <section class="skillRowSect" id="">
-                <img src="/images/writing.png" alt="" class="skillRowImage" id="">
-                <p class="skillRowText" id="">
-                    Writing
-                </p>
-            </section>
-            <section class="skillRowSect" id="">
-                <img src="/images/CSS.png" alt="" class="skillRowImage" id="">
-                <p class="skillRowText" id="">
-                    CSS
-                </p>
-            </section>
-            <section class="skillRowSect" id="">
-                <img src="/images/guyOnComputer.png" alt="" class="skillRowImage" id="">
-                <p class="skillRowText" id="">
-                    Learning
-                </p>
-            </section>
-            <section class="skillRowSect" id="">
-                <img src="/images/design.png" alt="" class="skillRowImage" id="">
-                <p class="skillRowText" id="">
-                    Design
-                </p>
+            <section class="row">
+                <section class="skillRowSect" id="">
+                    <img src="/images/writing.png" alt="" class="skillRowImage" id="">
+                    <p class="skillRowText" id="">
+                        Writing
+                    </p>
+                </section>
+                <section class="skillRowSect" id="">
+                    <img src="/images/CSS.png" alt="" class="skillRowImage" id="">
+                    <p class="skillRowText" id="">
+                        CSS
+                    </p>
+                </section>
+                <section class="skillRowSect" id="">
+                    <img src="/images/guyOnComputer.png" alt="" class="skillRowImage" id="">
+                    <p class="skillRowText" id="">
+                        Learning
+                    </p>
+                </section>
+                <section class="skillRowSect" id="">
+                    <img src="/images/design.png" alt="" class="skillRowImage" id="">
+                    <p class="skillRowText" id="">
+                        Design
+                    </p>
+                </section>
             </section>
         </article>
         <article class="whiteArticle" id="">
             <section class="row" id="rowTextAdvent">
-                <section class="blueSect" id="">
+                <section class="blueSect three" id="">
                     <p class="blueText" id="">What I Used:</p>
                     <ul class="blueText" id="">
                         <li>Github</li>
@@ -106,7 +163,7 @@
                         </ul>
                     </ul>
                 </section>
-                <section class="bluesect" id="">
+                <section class="blueSect three" id="">
                     <p class="blueText" id="">What I have Learnt:</p>
                     <ul class="blueText">
                         <li>Organization</li>
@@ -119,88 +176,70 @@
                         <li>JavaScript</li>
                     </ul>
                 </section>
-            </section>
-            <section class="blueSect" id="">
-                <p class="blueText" id="">Issues:</p>
-                <ul>
-                    <li>Creating the Story</li>
-                    <ul>
-                        <li>
-                            This change was required and was a last minute change, I completed it on time but it was
-                            stressful.
-                        </li>
+                <section class="blueSect three" id="">
+                    <p class="blueText" id="">Issues:</p>
+                    <ul class="blueText">
+                        <li>Creating the Story</li>
+                        <ul>
+                            <li>
+                                This change was required and was a last minute change, I completed it on time but it was
+                                stressful.
+                            </li>
+                        </ul>
+                        </li>The Combat</li>
+                        <ul>
+                            <li>
+                                Angel and I had a hard time trying to figure out how to allow a character to take
+                                damage, we
+                                figured it out by the end by creating a conductor and a class function.
+                            </li>
+                        </ul>
+                        </li>Time Management</li>
+                        <ul>
+                            <li>
+                                This project was at the end of the school year where homework was piling. We found it
+                                hard
+                                at times to make time for it, but we made a calendar and figured it out at the end.
+                            </li>
+                        </ul>
                     </ul>
-                    </li>The Combat</li>
-                    <ul>
-                        <li>
-                            Angel and I had a hard time trying to figure out how to allow a character to take damage, we
-                            figured it out by the end by creating a conductor and a class function.
-                        </li>
-                    </ul>
-                    </li>Time Management</li>
-                    <ul>
-                        <li>
-                            This project was at the end of the school year where homework was piling. We found it hard
-                            at times to make time for it, but we made a calendar and figured it out at the end.
-                        </li>
-                    </ul>
-                </ul>
-            </section>
-            <article class="whiteArticle" id="">
-                <h2 class="blueHeading" id="">About Vengeful Knight</h2>
-                <section class="blueSect" id="">
-                    <p class="blueText" id="">
-                        This is a group project using JavaScript, CSS, and HTML. This was our first game we created from
-                        scratch the is a text adventure. We spent the first week learning about other text adventures,
-                        then came up with the story, I wrote out the script while my partner worked on the Figma design.
-                        We then coded that website and presented to our class then at CART Showcase.
-                    </p>
                 </section>
-                <section class="gallery" id="galleryTextAdvent">
-                    <img src="/images/imageTA.png" alt="" class="imageTextAdvent" id="">
-                    <img src="/images/textAdventure.png" alt="" class="imageTextAdvent" id="">
-                    <img src="/images/inventoryTA.png" alt="" class="imageTextAdvent" id="">
+            </section>
+        </article>
+        <h2 class="blueHeading" id="">About Vengeful Knight</h2>
+        <article class="whiteArticle" id="">
+            <section class="blueSect oneSect" id="">
+                <p class="blueText" id="">
+                    This is a group project using JavaScript, CSS, and HTML. This was our first game we created from
+                    scratch the is a text adventure. We spent the first week learning about other text adventures,
+                    then came up with the story, I wrote out the script while my partner worked on the Figma design.
+                    We then coded that website and presented to our class then at CART Showcase.
+                </p>
+            </section>
+            <section class="gallery row" id="galleryTextAdvent">
+                <section class="column">
+                    <img src="/images/youngJackKnight.png" alt="image of main character" class="imageTextAdvent">
+                    <p>Jack</p>
                 </section>
-            </article>
+                <section class="column">
+                    <img src="/images/oldRichard.png" alt="image of villain" class="imageTextAdvent">
+                    <p>Dragon</p>
+                </section>
+                <section class="column">
+                    <img src="/images/dragonfire.png" alt="image of the mentor" class="imageTextAdvent">
+                    <p>Henry</p>
+                </section>
+        </article>
     </main>
     <footer>
-        <section class="footerBar" id="footerBarAboutMe">
-            <a href="aboutMe.html"><button class="" id="">
-                    About Me
-                </button></a>
-            <a href="homePage.html"><button class="" id="">
-                    Home Page
-                </button></a>
-            <a href="resume.html"><button class="" id="">
-                    Resume
-                </button></a>
-            <a href="cretaceousCafe.html"><button class="" id="">
-                    Cretaceous Cafe
-                </button></a>
-            <a href="revengeKnight.html"><button class="" id="">
-                    Revenge Knight
-                </button></a>
-            <a href="troodonWiki.html"><button class="" id="">
-                    Troodon Wiki
-                </button></a>
-            <a href="dogSitter.html"><button class="" id="">
-                    Pet Sitting
-                </button></a>
-            <a href="contacts.html"><button class="" id="">
-                    Contacts
-                </button></a>
-        </section>
-        <section class="footerText" id="footerTextAboutMe">
-            <h4 class="" id="">
-                I am Loghan Hornor, a 17 year old junior at CEHS and CART. I am also a Website Designer
-                and Programmer as well as a
-                self employed as a Pet Sitter.
-            </h4>
-        </section>
-        <section class="navImages" id="navImagesAboutMe">
-            <img src="/images/indeed.png" alt="image of indeed logo that is linked to my account when clicked" class="navImage" id="navImageIndeed">
-            <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked" class="navImage" id="navImageGithub">
-            <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked" class="navImage" id="navImageEmail">
+        <section class="footerAlign">
+            <section class="footerText" id="footerTextAboutMe">
+                <h4 class="" id="">
+                    I am Loghan Hornor, a 17 year old junior at CEHS and CART. I am also a Website Designer
+                    and Programmer as well as a
+                    self employed as a Pet Sitter.
+                </h4>
+            </section>
         </section>
     </footer>
 </body>

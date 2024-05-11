@@ -5,63 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- links to fonts -->
+    <!-- Arvo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Josefin Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <section class="navBar" id="navBarHome">
-            <a href="aboutMe.html"><button class="" id="">
-                    About Me
-                </button></a>
-            <a href="homePage.html"><button class="" id="">
-                    Home Page
-                </button></a>
-            <a href="resume.html"><button class="" id="">
-                    Resume
-                </button></a>
-            <a href="cretaceousCafe.html"><button class="" id="">
-                    Cretaceous Cafe
-                </button></a>
-            <a href="revengeKnight.html"><button class="" id="">
-                    Revenge Knight
-                </button></a>
-            <a href="troodonWiki.html"><button class="" id="">
-                    Troodon Wiki
-                </button></a>
-            <a href="dogSitter.html"><button class="" id="">
-                    Pet Sitting
-                </button></a>
-            <a href="contacts.html"><button class="" id="">
-                    Contacts
-                </button></a>
-        </section>
         <section class="navImages" id="navImagesAboutMe">
-            <img src="/images/indeed.png" alt="image of indeed logo that is linked to my account when clicked" class="navImage" id="navImageIndeed">
-            <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked" class="navImage" id="navImageGithub">
-            <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked" class="navImage" id="navImageEmail">
+            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage"><img
+                    src="/images/Indeed-Symbol.png" alt="image of indeed logo that is linked to my account when clicked"
+                    class="navImage" id="navImageIndeed">
+            </a>
+            <a href="https://github.com/GamingN0body">
+                <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
+                    class="navImage" id="navImageGithub">
+            </a>
+            <a href="https://mail.google.com/mail/u/3/#inbox">
+                <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
+                    class="navImage" id="navImageEmail">
+            </a>
+        </section>
+        <!-- I will add a text that will change and say something, think it will be cool and it will add more js -->
+        <section class="navbarColumn">
+            <section class="navBar">
+                <button class="navButtonDD">
+                    About Me
+                </button>
+                <section class="navBarContent" id="navBarHome">
+                    <a href="aboutMe.html"><button class="navButtons" id="">
+                            About Me
+                        </button></a>
+                    <a href="homePage.html"><button class="navButtons" id="">
+                            Home Page
+                        </button></a>
+                    <a href="resume.html"><button class="navButtons" id="">
+                            Resume
+                        </button></a>
+                    <a href="contacts.html"><button class="navButtons" id="">
+                            Contacts
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Websites
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="cretaceousCafe.html"><button class="navButtons" id="">
+                            Cretaceous Cafe
+                        </button></a>
+                    <a href="revengeKnight.html"><button class="navButtons" id="">
+                            Revenge Knight
+                        </button></a>
+                    <a href="troodonWiki.html"><button class="navButtons" id="">
+                            Troodon Wiki
+                        </button></a>
+                </section>
+            </section>
+            <section class="navBar">
+                <button class="navButtonDD">
+                    Occupation
+                </button>
+                <section class="navBarContent" id="">
+                    <a href="dogSitter.html"><button class="navButtons" id="">
+                            Pet Sitting
+                        </button></a>
+                </section>
+            </section>
         </section>
     </nav>
     <header>
         <section class="textHeader" id="">
-            <h1 class="title" id="titlePets">Pet & House <br>Sitter</h1>
-            <h3 class="subtitle" id="subtitlePets">Loghan Hornor</h3>
+            <section class="row innerTextHeader">
+                <h1 class="title" id="titlePets">Pet & House <br>Sitter</h1>
+                <h3 class="subtitle" id="subtitlePets">Loghan Hornor</h3>
+            </section>
         </section>
     </header>
     <main>
         <article class="aboutPage" id="">
-            <section class="aboutPageBody" id="">
-                <img src="" alt="image of a dog" class="aboutPageImage" id="">
-                <p class="aboutPageText" id="">
-                    I have worked with animals all my life. I’ve never not had a pet if it was either a dog, a fish, or
-                    a cat. I have always loved animals and hate it when I hear how someone had to leave their pet by
-                    themselves for an extended period of time. I used to only work with my family, but it soon became
-                    more than just family now its friend’s of friends. I hope I can work with your little one.
-                </p>
+            <section class="aboutPageBody center" id="">
+                <section class="row">
+                    <section class="column">
+                        <p class="aboutPageText" id="">
+                            I have worked with animals all my life. I’ve never not had a pet if it was either a dog, a
+                            fish,
+                            or
+                            a cat. I have always loved animals and hate it when I hear how someone had to leave their
+                            pet by
+                            themselves for an extended period of time. I used to only work with my family, but it soon
+                            became
+                            more than just family now its friend’s of friends. I hope I can work with your little one.
+                        </p>
+                    </section>
+                </section>
             </section>
         </article>
         <article class="blueArticles" id="myCostsArt">
             <h2 class="whiteHeading" id="myCostsHeading">My Costs</h2>
-            <section class="whiteSect" id="whiteSectMyCosts">
+            <section class="whiteSect center" id="whiteSectMyCosts">
                 <ul class="" id="">
                     <li>General Pay: (+$10 per animal)</li>
                     <ul>
@@ -84,56 +142,37 @@
         </article>
         <article class="whiteArticle" id="petWorked">
             <h2 class="blueHeading">Pets Worked With</h2>
-            <section class="gallery" id="galleryAnimals">
-                <img src="/images/dogs.jpeg" alt="image of two dogs looking at the camera" class="animalImage" id="">
-                <p>Spike & Appa</p>
-                <img src="/images/" alt="image of a dog in a crate" class="animalImage" id="">
-                <p>Winry</p>
-                <img src="/images/oldDog.jpg" alt="image of a old dog on a bed" class="animalImage" id="">
-                <p>Kitty</p>
-                <img src="/images/cat.jpg" alt="" class="" id="">
-                <p>Cloud</p>
+            <section class="gallery row center" id="galleryAnimals">
+                <section class="animalGallery column">
+                    <img src="/images/twoDogs.png" alt="image of two dogs looking at the camera" class="animalImage"
+                        id="imgTwoDogs">
+                    <p>Spike & Appa</p>
+                </section>
+                <section class="animalGallery column">
+                    <img src="/images/youngDog.png" alt="image of a dog in a crate" class="animalImage"
+                        id="imgSmallDog">
+                    <p>Winry</p>
+                </section>
+                <section class="animalGallery column">
+                    <img src="/images/oldDog.png" alt="image of a old dog on a bed" class="animalImage" id="imgOldDog">
+                    <p>Kitty</p>
+                </section>
+                <section class="animalGallery column">
+                    <img src="/images/cat.png" alt="image of a cat on a couch" class="animalImage" id="imgCat">
+                    <p>Cloud</p>
+                </section>
             </section>
         </article>
     </main>
     <footer>
-        <section class="footerBar" id="footerBarAboutMe">
-            <a href="aboutMe.html"><button class="" id="">
-                    About Me
-                </button></a>
-            <a href="homePage.html"><button class="" id="">
-                    Home Page
-                </button></a>
-            <a href="resume.html"><button class="" id="">
-                    Resume
-                </button></a>
-            <a href="cretaceousCafe.html"><button class="" id="">
-                    Cretaceous Cafe
-                </button></a>
-            <a href="revengeKnight.html"><button class="" id="">
-                    Revenge Knight
-                </button></a>
-            <a href="troodonWiki.html"><button class="" id="">
-                    Troodon Wiki
-                </button></a>
-            <a href="dogSitter.html"><button class="" id="">
-                    Pet Sitting
-                </button></a>
-            <a href="contacts.html"><button class="" id="">
-                    Contacts
-                </button></a>
-        </section>
-        <section class="footerText" id="footerTextAboutMe">
-            <h4 class="" id="">
-                I am Loghan Hornor, a 17 year old junior at CEHS and CART. I am also a Website Designer
-                and Programmer as well as a
-                self employed as a Pet Sitter.
-            </h4>
-        </section>
-        <section class="navImages" id="navImagesAboutMe">
-            <img src="/images/indeed.png" alt="image of indeed logo that is linked to my account when clicked" class="navImage" id="navImageIndeed">
-            <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked" class="navImage" id="navImageGithub">
-            <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked" class="navImage" id="navImageEmail">
+        <section class="footerAlign">
+            <section class="footerText" id="footerTextAboutMe">
+                <h4 class="" id="">
+                    I am Loghan Hornor, a 17 year old junior at CEHS and CART. I am also a Website Designer
+                    and Programmer as well as a
+                    self employed as a Pet Sitter.
+                </h4>
+            </section>
         </section>
     </footer>
 </body>
