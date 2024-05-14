@@ -24,9 +24,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <style>
+        .skillRowSect {
+            display: none;
+        }
+
+        .skillRow {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .skillRowText {
+            color: #f2f2f2;
+            font-size: 15px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
 </head>
 
-<body>   
+<body>
     <nav>
         <section class="navImages" id="navImagesAboutMe">
             <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-menu-homepage"><img
@@ -111,7 +160,7 @@
     </header>
     <!-- MARQUE -->
     <main>
-        <article class="aboutPage" id="">
+        <article class="aboutPage">
             <section class="aboutPageBody center" id="">
                 <section class="row">
                     <img src="/images/loghan.jpg" alt="image of me" class="aboutPageImage">
@@ -123,7 +172,7 @@
                             I am self employed as a House Sitter and have experience in Programming.
                             I am planning to attend Washington State University in WA, while at WSU I will major in
                             software
-                            engineering and minor in computer science. Experience in front end coding applying my skills
+                            engineering and minor in computer science. Experience in front end coding applying my skills
                             in programming languages such as HTML, CSS, JavaScript. I have worked on school projects
                             that I have presented during showcase. I hope to be able to apply me skills learned like
                             teamwork to other areas. Seeking opportunities to continue delivering exceptional websites
@@ -136,67 +185,32 @@
                 </section>
             </section>
         </article>
-        <!-- <article>
-            <h2 class="skillsHeading" id="skillsHome">My Skills</h2>
+        <article class="skillRowsArt">
             <section class="skillRow">
-
                 <section class="skillRowSect fade">
                     <img src="/images/guyOnComputer.png">
-                    <div class="skillRowText">Caption Text</div>
+                    <div class="skillRowText">Programming</div>
                 </section>
-
                 <section class="skillRowSect fade">
-                    <img src="/images/cat.png">
-                    <div class="skillRowText">Caption Two</div>
+                    <img src="/images/CSS.png">
+                    <div class="skillRowText">CSS</div>
                 </section>
-
-                <section class="skillRowSect fade">
-                    <img src="/images/github.webp">
-                    <div class="skillRowText">Caption Three</div>
-                </section>
-
                 <section class="skillRowSect fade">
                     <img src="/images/design.png">
-                    <div class="skillRowText">Caption FOUR</div>
+                    <div class="skillRowText">Design</div>
                 </section>
-
+                <section class="skillRowSect fade">
+                    <img src="/images/teamwork.png">
+                    <div class="skillRowText">Teamwork</div>
+                </section>
             </section>
             <br>
-
-            <div>
+            <div class="dotContainer">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-        </article> -->
-        <article class="skillRow" id="">
-            <section class="row">
-                <section class="skillRowSect fade" id="">
-                    <img src="/images/guyOnComputer.png" alt="" class="skillRowImage" id="skillRowImageTyping">
-                    <p class="skillRowText" id="">
-                        Typing
-                    </p>
-                </section>
-                <section class="skillRowSect fade" id="">
-                    <img src="/images/html.png" alt="" class="skillRowImage" id="skillRowImageHTML">
-                    <p class="skillRowText" id="">
-                        HTML
-                    </p>
-                </section>
-                <section class="skillRowSect fade" id="">
-                    <img src="/images/CSS.png" alt="" class="skillRowImage" id="skillRowImageCSS">
-                    <p class="skillRowText" id="">
-                        CSS
-                    </p>
-                </section>
-                <section class="skillRowSect fade" id="">
-                    <img src="/images/teamwork.png" alt="" class="skillRowImage" id="skillRowImageTeamwork">
-                    <p class="skillRowText" id="">
-                        Teamwork
-                    </p>
-                </section>
-            </section>
         </article>
         <h2 class="whiteHeading" id="">My Websites</h2>
         <article class="blueArticles row" id="">
@@ -283,7 +297,6 @@
             </section>
         </article>
     </main>
-    <!-- I want the text on the footer to look cool with an animation -->
     <footer>
         <section class="footerAlign">
             <section class="footerText" id="footerTextAboutMe">
@@ -295,6 +308,28 @@
             </section>
         </section>
     </footer>
+    <script>
+        let slideIndex = 0;
+        skillSlide();
+
+        function skillSlide() {
+            let i;
+            let slides = document.getElementsByClassName("skillRowSect");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(skillSlide, 2000); // Change image every 2 seconds
+        }
+    </script>
+
 </body>
 
 </html>
