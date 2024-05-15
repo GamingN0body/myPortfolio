@@ -4,9 +4,6 @@
     padding: 0;
 }
 
-/* body{
-    
-} */
 nav {
     background-color: #26619C;
     color: #FFFAFA;
@@ -123,8 +120,7 @@ ul {
 }
 
 .navImage {
-    direction: rtl;
-    width: 5%;
+    width: 100px;
 }
 
 .navButtonDD {
@@ -216,6 +212,8 @@ ul {
 }
 
 /* Blue Article */
+#resumeArticles,
+#resumeArticlesBlue,
 .blueArticles {
     background-color: #0047AB;
     height: max-content;
@@ -238,7 +236,8 @@ ul {
 }
 
 /* White Article */
-.whiteArticles {
+.whiteArticles,
+#resumeArticlesWhite {
     background-color: #E3DAC9;
     height: max-content;
 }
@@ -413,9 +412,11 @@ hr {
 .resumeRow {
     display: flex;
 }
+
 /* text animate */
 .textUnanimated {
-    color: #000080;;
+    color: #000080;
+    ;
     font-size: 60px;
     font-weight: 600;
 }
@@ -461,11 +462,62 @@ hr {
 }
 
 @keyframes type {
+
     40%,
     60% {
         left: calc(100% + 30px);
     }
+
     100% {
         left: 0;
+    }
+}
+
+/* Image Transition */
+.container {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+#toggle-theme {
+    transition: width 2s, height 2s;
+    width: 20%;
+    height: 20%;
+}
+
+#toggle-theme:hover {
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .navImage {
+        width: 75px;
+    }
+
+    .aboutPageImage,
+    .headerImage {
+        width: 0;
+        border: 0;
+    }
+
+    .aboutPageText {
+        font-size: 16px;
+        padding: 2%;
+    }
+
+    .whiteText,
+    .blueText {
+        font-size: 20px;
+    }
+
+    .whiteSectThree {
+        width: 95%;
+        margin: 1.5%;
     }
 }

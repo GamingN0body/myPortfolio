@@ -1,8 +1,4 @@
-{/*     <div class="container">
-        <h1>Theme Toggling Demo</h1>
-        <button id="toggle-theme">Toggle Theme</button>
-    </div> */}
-
+// This allows the dark mod to work
 const cssStyleSheet = document.getElementById("theme-css") //gets the reference to css to toggle page
 const toggleBtn = document.getElementById("toggle-theme") //gets the reference to toggle page
 
@@ -40,3 +36,5 @@ function getTheme() {
     let theme = getTheme();
     cssStyleSheet.href = `./css/${theme}.css`;
 })()
+
+// This is for the button animation

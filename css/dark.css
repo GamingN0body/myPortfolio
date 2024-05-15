@@ -1,16 +1,16 @@
 body {
     background-color: black;
-    color: #136912;
+    color: red;
 }
 
 nav,
 footer {
     background-color: #136912;
-    color: black;
+    color: red;
 }
 
 header {
-    background-color: #042e03;
+    background-color: #075a06;
     color: #042e03;
 }
 
@@ -23,7 +23,7 @@ button {
 /* Base Changes */
 .textHeader {
     background-color: black;
-    color: #136912;
+    color: red;
 }
 
 /* About Page */
@@ -33,32 +33,32 @@ button {
 
 .aboutPageText {
     background-color: black;
-    color: #136912;
+    color: red;
 }
 
 /* Skill Row */
 .skillRowsArt {
-    background-color: #042e03;
+    background-color: #075a06;
 }
 
 .skillRowText {
     background-color: black;
-    color: #136912;
+    color: red;
 }
-
+/* Green/Red on Black */
 .blueArticles {
     background-color: #155e14;
 }
 
 .whiteHeading {
     background-color: #155e14;
-    color: black;
+    color: red;
 }
 
 .whiteSect,
 .whiteBox {
     background-color: black;
-    color: #155e14;
+    color: red;
     font-weight: 400;
 }
 
@@ -68,7 +68,7 @@ button {
 
 .blueHeading {
     background-color: black;
-    color: #155e14;
+    color: red;
 }
 
 .blueSect {
@@ -83,5 +83,7 @@ button {
 }
 
 .textUnanimated {
-    color: #155e14;
+    color: red;
 }
+
+/* Random */
