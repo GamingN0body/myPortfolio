@@ -1,0 +1,18 @@
+body {
+    background-color: white;
+}
+
+.textHeader,
+.skillRowText,
+.whiteSect,
+.whiteBox,
+.whiteArticles {
+    background-color: white;
+}
+
+.aboutPageText,
+.skillRowsArt,
+.whiteHeading,
+.blueSect {
+    color: white;
+}

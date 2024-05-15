@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    color: #136912;
+}
+
+nav,
+footer {
+    background-color: #136912;
+    color: black;
+}
+
+header {
+    background-color: #042e03;
+    color: #042e03;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-color: rgb(8, 164, 32);
+}
+
+/* Base Changes */
+.textHeader {
+    background-color: black;
+    color: #136912;
+}
+
+/* About Page */
+.aboutPage {
+    background-color: black;
+}
+
+.aboutPageText {
+    background-color: black;
+    color: #136912;
+}
+
+/* Skill Row */
+.skillRowsArt {
+    background-color: #042e03;
+}
+
+.skillRowText {
+    background-color: black;
+    color: #136912;
+}
+
+.blueArticles {
+    background-color: #155e14;
+}
+
+.whiteHeading {
+    background-color: #155e14;
+    color: black;
+}
+
+.whiteSect,
+.whiteBox {
+    background-color: black;
+    color: #155e14;
+    font-weight: 400;
+}
+
+.whiteArticles {
+    background-color: #155e14;
+}
+
+.blueHeading {
+    background-color: black;
+    color: #155e14;
+}
+
+.blueSect {
+    background-color: #155e14;
+    color: black;
+}
+
+/* Header Animation */
+.animateText li span::after {
+    background-color: black;
+    border-left: 3px solid white;
+}
+
+.textUnanimated {
+    color: #155e14;
+}
