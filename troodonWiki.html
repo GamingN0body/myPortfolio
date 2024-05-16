@@ -39,7 +39,7 @@
                 <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
                     class="navImage" id="navImageGithub">
             </a>
-            <a href="https://mail.google.com/mail/u/3/#inbox">
+            <a href="/email.html">
                 <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
                     class="navImage" id="navImageEmail">
             </a>
@@ -51,7 +51,7 @@
                     About Me
                 </button>
                 <section class="navBarContent" id="navBarHome">
-                    <a href="aboutMe.html"><button class="navButtons" id="">
+                    <a href="index.html"><button class="navButtons" id="">
                             About Me
                         </button></a>
                     <a href="homePage.html"><button class="navButtons" id="">
@@ -109,42 +109,44 @@
         <article class="aboutPage" id="">
             <section class="aboutPageBody oneSect" id="">
                 <p class="aboutPageText" id="aboutPageTextTW">
-                    This was my first website using HTML and CSS. This is a school project about learning about
-                    dinosaurs of our choice, I choose to write about the Troodon. I did all the design for the
-                    website
-                    and coding.
+                    This was my first website using HTML and CSS. The aim of this project was to research a dinosuar of
+                    your choice. I chose to write about the Troodon. I did all the design for the website
+                    and programming.
                 </p>
+                <div class="">
+                    <a href="https://troodonwiki.netlify.app/"><button>Troodon Wikipedia Page</button></a>
+                </div>
             </section>
         </article>
-        <article class="skillRow" id="">
-            <h2 class="skillRow" id="">Skills Used</h2>
-            <section class="row">
-                <section class="skillRowSect" id="">
-                    <img src="/images/html.png" alt="" class="skillRowImage" id="">
-                    <p class="skillRowText" id="">
-                        HTML
-                    </p>
+        <h2 class="skillsHeading" id="">Skills Used</h2>
+        <article class="skillRowsArt">
+            <section class="skillRow">
+                <section class="skillRowSect fade">
+                    <img src="/images/html.png">
+                    <div class="skillRowText">HTML</div>
                 </section>
-                <section class="skillRowSect" id="">
-                    <img src="/images/CSS.png" alt="" class="skillRowImage" id="">
-                    <p class="skillRowText" id="">
-                        CSS
-                    </p>
+                <section class="skillRowSect fade">
+                    <img src="/images/CSS.png">
+                    <div class="skillRowText">CSS</div>
                 </section>
-                <section class="skillRowSect" id="">
-                    <img src="/images/guyOnComputer.png" alt="" class="skillRowImage" id="">
-                    <p class="skillRowText" id="">
-                        Learning
-                    </p>
+                <section class="skillRowSect fade">
+                    <img src="/images/guyOnComputer.png">
+                    <div class="skillRowText">Learning</div>
                 </section>
-                <section class="skillRowSect" id="">
-                    <img src="/images/design.png" alt="" class="skillRowImage" id="">
-                    <p class="skillRowText" id="">
-                        Design
-                    </p>
+                <section class="skillRowSect fade">
+                    <img src="/images/design.png">
+                    <div class="skillRowText">Design</div>
                 </section>
             </section>
+            <br>
+            <div class="dotContainer">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </article>
+        <h2 class="whiteHeading">What I have Learned</h2>
         <article class="whiteArticle" id="">
             <section class="row" id="rowWiki">
                 <section class="blueSect three" id="">
@@ -180,31 +182,33 @@
                         <li>Creating the Links</li>
                         <ul>
                             <li>
-                                This change was required and was a last minute change, I completed it on time but it was
-                                stressful.
+                                I ran into issues of sourcing my links. Since our goal was to make a Wikipedia page we
+                                had to source like one. It took a bit but through problem solving I was able to fix the
+                                bugs.
                             </li>
                         </ul>
-                        </li>Styling the Images</li>
+                        <li>Styling the Images</li>
                         <ul>
                             <li>
-                                I had trouble being able to organize the images and text so they all lined up, I ended
-                                up
-                                just changing ideas.
+                                I had trouble being able to styling the pages since I did not know how to get the image
+                                sizes to change. I was able to work around this issue by the final product.
                             </li>
                         </ul>
                     </ul>
                 </section>
             </section>
         </article>
+        <h2 class="whiteHeading">What is it?</h2>
         <article class="whiteArticles row" id="wikiDouble">
             <section class="blueSect galleryWiki ">
                 <section class="column">
                     <img src="/images/mapWiki.png" alt="image of a map where Troodon lives" class="imageWiki" id="">
                     <p class="blueText">
                         The image above is from my website about the Troodon habitat. Even though we do not know much
-                        about the Troodon we know do know where the Troodon lived. This section I explain where it lives
-                        and how it was effected by its Habit, with some more context of how scientist figured it all
-                        out. </p>
+                        about the Troodon, we do know where the Troodon lived. In this section, I explain where it lived
+                        and how it was affected by its habitat, with some more context of how scientists figured it all
+                        out.
+                    </p>
                 </section>
             </section>
             <section class="blueSect galleryWiki">
@@ -212,9 +216,9 @@
                     <img src="/images/textFromWiki.png" alt="image of Troodon eggs" class="imageWiki"
                         id="imageWikiEggs">
                     <p class="blueText">
-                        This image is the eggs of the Troodon, in the website I go in detail of what sceintist's think
-                        the Troodon used to live and how they mated. I also went into how how the Troodon would live and
-                        how they would parent.
+                        This image is the eggs of the Troodon; on the website, I go into detail about how scientists
+                        think the Troodon used to live and how they mated. I went into farther detail into Troodon pack
+                        behaviors along with how they would procreate.
                     </p>
                 </section>
             </section>
@@ -231,6 +235,27 @@
             </section>
         </section>
     </footer>
+    <script>
+        let slideIndex = 0;
+        skillSlide();
+
+        function skillSlide() {
+            let i;
+            let slides = document.getElementsByClassName("skillRowSect");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(skillSlide, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>

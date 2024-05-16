@@ -39,7 +39,7 @@
                 <img src="/images/github.webp" alt="image of github logo that is linked to my account when clicked"
                     class="navImage" id="navImageGithub">
             </a>
-            <a href="https://mail.google.com/mail/u/3/#inbox">
+            <a href="/email.html">
                 <img src="/images/email.png" alt="image of email logo that is linked to my account when clicked"
                     class="navImage" id="navImageEmail">
             </a>
@@ -51,7 +51,7 @@
                     About Me
                 </button>
                 <section class="navBarContent" id="navBarHome">
-                    <a href="aboutMe.html"><button class="navButtons" id="">
+                    <a href="index.html"><button class="navButtons" id="">
                             About Me
                         </button></a>
                     <a href="homePage.html"><button class="navButtons" id="">
@@ -106,56 +106,55 @@
         <div class="container">
             <img src="/images/darkMode.png" id="toggle-theme">
         </div>
-        <div class="container">
-            <h1>Theme Toggling Demo</h1>
-            <button id="toggle-theme">Toggle Theme</button>
-        </div>
         <article class="aboutPage" id="">
             <section class="aboutPageBody center" id="">
                 <section class="row">
                     <img src="/images/logoWebsite.png" alt="image of website logo" class="aboutPageImage" id="">
                     <p class="aboutPageText" id="">
-                        Me and Gavin created a website for a full service restaurant that is in Jurassic Park for a
-                        group
-                        project at CART. We started the project late 2023 and ended it right before 2024 started, we
-                        still
-                        work on it today. This was one of our first websites created. We really only used HTML and CSS
-                        to
-                        create it, with some JS. It contains 8 pages of content.
+                        Gavin and I, together created a full service restaurant website that exists in the world of
+                        Jurassic
+                        Park for a group project at CART.
+                        Even though the assigment ended after three months, to this day
+                        we still strive to transform into a website that could appear in the
+                        real world.
+                        This was our first websites, we used HTML and CSS
+                        to create it in addition to some JS. In its current format it contains eight pages of content.
                     </p>
                 </section>
             </section>
+            <div class="center">
+                <a href="https://cretaceouscafe.netlify.app"><button>Cretaceous Cafe</button></a>
+            </div>
         </article>
-        <article class="skillRow" id="">
-            <h2 class="skillsHeading" id="">Skills Used</h2>
-            <section class="row">
-                <section class="skillRowSect" id="">
-                    <img src="/images/html.png" alt="" class="skillRowImage" id="">
-                    <p class="skillRowText" id="">
-                        HTML
-                    </p>
+        <h2 class="skillsHeading" id="">Skills Used</h2>
+        <article class="skillRowsArt">
+            <section class="skillRow">
+                <section class="skillRowSect fade">
+                    <img src="/images/html.png">
+                    <div class="skillRowText">HTML</div>
                 </section>
-                <section class="skillRowSect" id="">
-                    <img src="/images/CSS.png" alt="" class="skillRowImage" id="">
-                    <p class="skillRowText" id="">
-                        CSS
-                    </p>
+                <section class="skillRowSect fade">
+                    <img src="/images/CSS.png">
+                    <div class="skillRowText">CSS</div>
                 </section>
-                <section class="skillRowSect" id="">
-                    <img src="/images/javascript.png" alt="" class="skillRowImage imageJS" id="">
-                    <p class="skillRowText" id="">
-                        JS
-                        <!-- Change Image to larger version -->
-                    </p>
+                <section class="skillRowSect fade">
+                    <img src="/images/javascript.png">
+                    <div class="skillRowText">JavaScript</div>
                 </section>
-                <section class="skillRowSect" id="">
-                    <img src="/images/design.png" alt="" class="skillRowImage" id="">
-                    <p class="skillRowText" id="">
-                        Design
-                    </p>
+                <section class="skillRowSect fade">
+                    <img src="/images/design.png">
+                    <div class="skillRowText">Design</div>
                 </section>
             </section>
+            <br>
+            <div class="dotContainer">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </article>
+        <h2 class="whiteHeading">What I have Learned</h2>
         <article class="whiteArticle" id="">
             <section class="row" id="rowCafe">
                 <section class="blueSect three" id="">
@@ -180,23 +179,21 @@
                     <ul class="blueText">
                         <li>Creating the Cart</li>
                         <ul>
-                            <li>I had to learn the JS code to make it work with our site, we got it to work before the
-                                due
-                                date.
+                            <li>I had to learn the JS code to make it work with our site, we managed to meet the
+                                deadline.
                             </li>
                         </ul>
-                        </li>Creating the Calandar</li>
+                        <li>Creating the Calandar</li>
                         <ul>
                             <li>This was my first real look at JS, so it took me a while to understand how to create a
                                 working
-                                calendar.</li>
+                                calendar, but we were able to create a functional calander.</li>
                         </ul>
                         <li>Communication</li>
                         <ul>
-                            <li>A member did not inform us that they were going to miss a week evn so we still worked
-                                through it
-                                and
-                                finished.</li>
+                            <li>While presenting the projects a memeber left, we were able to still complete the
+                                presention. This event really showed us the importance of communication during projects.
+                            </li>
                         </ul>
                     </ul>
                 </section>
@@ -235,7 +232,7 @@
                 <img src="/images/cartWebsite.png" alt="" class="websiteImg" id="">
                 <p class="whiteText" id="">
                     Cart: <br>
-                    This page is to make sure that you do indeed have what items you wanted. It was used using HTML,
+                    This page is to make sure that you have what items you entered in through the menu page. It was created using HTML,
                     CSS, and JS.
                 </p>
             </section>
@@ -252,6 +249,27 @@
             </section>
         </section>
     </footer>
+    <script>
+        let slideIndex = 0;
+        skillSlide();
+
+        function skillSlide() {
+            let i;
+            let slides = document.getElementsByClassName("skillRowSect");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(skillSlide, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>
