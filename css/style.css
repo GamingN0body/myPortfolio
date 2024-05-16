@@ -539,6 +539,12 @@ form input, form textarea {
     margin: 1%;
 }
 
+embed {
+    width: 50vw;
+    height: 50vh;
+    margin: 0%;
+}
+
 @media only screen and (max-width: 700px) {
     .row {
         flex-direction: column;
