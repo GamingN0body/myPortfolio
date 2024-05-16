@@ -35,9 +35,4 @@ function getTheme() {
 (() => {
     let theme = getTheme();
     cssStyleSheet.href = `./css/${theme}.css`;
-})()
-
-// email 
-
-
-//
+})();
