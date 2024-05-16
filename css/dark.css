@@ -1,29 +1,29 @@
 body {
     background-color: black;
-    color: red;
+    color: white;
 }
 
 nav,
 footer {
-    background-color: #136912;
-    color: red;
+    background-color: rgb(95, 92, 92);
+    color: white;
 }
 
 header {
-    background-color: #075a06;
-    color: #042e03;
+    background-color: rgb(71, 68, 68);
+    color: gray;
 }
 
 button {
     background-color: black;
     color: white;
-    border-color: rgb(8, 164, 32);
+    border-color: rgb(255, 255, 255);
 }
 
 /* Base Changes */
 .textHeader {
     background-color: black;
-    color: red;
+    color: white;
 }
 
 /* About Page */
@@ -33,46 +33,46 @@ button {
 
 .aboutPageText {
     background-color: black;
-    color: red;
+    color: white;
 }
 
 /* Skill Row */
 .skillRowsArt {
-    background-color: #075a06;
+    background-color: gray;
 }
 
 .skillRowText {
     background-color: black;
-    color: red;
+    color: white;
 }
-/* Green/Red on Black */
+/* Green/white on Black */
 .blueArticles {
-    background-color: #155e14;
+    background-color: grey;
 }
 
 .whiteHeading {
-    background-color: #155e14;
-    color: red;
+    background-color: grey;
+    color: black;
 }
 
 .whiteSect,
 .whiteBox {
     background-color: black;
-    color: red;
+    color: white;
     font-weight: 400;
 }
 
 .whiteArticles {
-    background-color: #155e14;
+    background-color: grey;
 }
 
 .blueHeading {
     background-color: black;
-    color: red;
+    color: black;
 }
 
 .blueSect {
-    background-color: #155e14;
+    background-color: grey;
     color: black;
 }
 
@@ -83,11 +83,11 @@ button {
 }
 
 .textUnanimated {
-    color: red;
+    color: white;
 }
 
 /* Random */
 
 .animalGallery {
-    color: red;
+    color: white;
 }
