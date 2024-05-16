@@ -52,7 +52,7 @@ button {
 
 .whiteHeading {
     background-color: grey;
-    color: black;
+    color: white;
 }
 
 .whiteSect,
@@ -68,12 +68,12 @@ button {
 
 .blueHeading {
     background-color: black;
-    color: black;
+    color: white;
 }
 
 .blueSect {
     background-color: grey;
-    color: black;
+    color: white;
 }
 
 /* Header Animation */
@@ -94,4 +94,8 @@ button {
 
 .websiteImg {
     background-color: gray;
+}
+
+p {
+    color: white;
 }
